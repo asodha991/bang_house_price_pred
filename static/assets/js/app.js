@@ -63,7 +63,7 @@ function getBathValue() {
   function onPageLoad() {
     console.log( "document loaded" );
     // var url = "http://127.0.0.1:5000/location"; // Use this if you are NOT using Heroku
-    var url = "https://bang-house-price-aj.herokuapp.com/location"; // Use this if for Heroku
+    var url = "api/location"; // Use this if for Heroku
     $.get(url,function(data, status) {
         console.log("got response for get_location_names request");
         if(data) {
