@@ -49,7 +49,7 @@ def load_artifact():
         __location   = __data_columns[7:]
 
     global __model
-    with open('artifacts\Price_pred_model.pickle', 'rb') as f:
+    with open('artifacts/Price_pred_model.pickle', 'rb') as f:
         __model = pickle.load(f)
 
     print("Loading Artifacts-- Completed")
