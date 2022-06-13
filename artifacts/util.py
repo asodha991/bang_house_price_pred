@@ -44,7 +44,7 @@ def load_artifact():
     print("Loading Artifacts-- Start")
     global __data_columns
     global __location
-    with open('artifacts\Columns.json', 'r') as f:
+    with open('artifacts/Columns.json', 'r') as f:
         __data_columns = json.load(f)['data_columns']
         __location   = __data_columns[7:]
 
