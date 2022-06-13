@@ -42,7 +42,7 @@ function getBathValue() {
     var estPrice = document.getElementById("uiEstimatedPrice");
   
     
-    var url = "https://bang-house-price-aj.herokuapp.com/predict"; // Use this if  you are using heroku
+    var url = "https://bang-house-price-aj.herokuapp.com/predict/"; // Use this if  you are using heroku
   
     $.post(url, {
       // (bath, balcony, total_sqft_cal, room, Area, location)
@@ -63,7 +63,7 @@ function getBathValue() {
   function onPageLoad() {
     console.log( "document loaded" );
     // var url = "http://127.0.0.1:5000/location"; // Use this if you are NOT using Heroku
-    var url = "api/location"; // Use this if for Heroku
+    var url = "https://bang-house-price-aj.herokuapp.com/location/"; // Use this if for Heroku
     $.get(url,function(data, status) {
         console.log("got response for get_location_names request");
         if(data) {
